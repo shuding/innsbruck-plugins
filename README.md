@@ -6,6 +6,14 @@ Plugins for [innsbruck](https://github.com/quietshu/innsbruck).
 
 Copy to `/plugin` folder.
 
+## list
+
+- disqus.js
+- google-fonts.js
+- image-zoom.js
+- markdown-editor.js
+- thumbnail.js
+
 ## license
 
 The MIT license. Copyright © 2016 by Shu Ding.
