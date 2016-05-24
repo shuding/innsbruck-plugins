@@ -13,6 +13,7 @@ Copy to `/plugin` folder.
 - image-zoom.js
 - markdown-editor.js
 - thumbnail.js
+- cname.js
 
 ## license
 
