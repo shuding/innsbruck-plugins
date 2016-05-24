@@ -19,7 +19,7 @@ module.exports = {
       // settings page
       context.settings = `<div class="input-group">
           <h5>CNAME</h5>
-          <p><input type="text" name="plugin.cname" placeholder="" value="${cname}"></p>
+          <p><input type="text" name="plugin.cname" placeholder="your.blog (without http:// or https://)" value="${cname}"></p>
         </div>`;
       // All <input name='plugin.xxx'> will write the data into DB automatically
     }
