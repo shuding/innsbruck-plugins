@@ -14,6 +14,7 @@ Copy to `/plugin` folder.
 - markdown-editor.js
 - thumbnail.js
 - cname.js
+- rss.js
 
 ## license
 
