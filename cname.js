@@ -8,8 +8,10 @@ const path = require('path');
 
 module.exports = {
   db:     null,
-  init:   _db => {
+  root:   null,
+  init:   (_db, _rootDir) => {
     this.db = _db;
+    this.root = _rootDir;
   },
   render: (template, options) => {
     let cname   = options.blog.plugin ? options.blog.plugin['cname'] || '' : '';
@@ -38,7 +40,7 @@ module.exports = {
     onSetting: () => {
       // called after
       let cname = this.db.object.blog.plugin ? this.db.object.blog.plugin['cname'] || '' : '';
-      let cnamePath = path.join(__dirname, '..', 'CNAME');
+      let cnamePath = path.join(this.root, 'CNAME');
       if (!cname) {
         // empty, remove the CNAME file
         if (fs.existsSync(cnamePath)) {
